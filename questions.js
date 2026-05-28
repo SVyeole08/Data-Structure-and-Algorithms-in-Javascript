@@ -41,3 +41,11 @@ const circum = () => {
     console.log("Value of radius must be positive.");
   }
 };
+
+//Dice:
+const dice = () => {
+  d = Math.trunc(Math.random() * 10);
+  if (d <= 6 && d >= 1) {
+    console.log(d);
+  }
+};
