@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 //Math functions:
 console.log(Math.ceil(10.2));  //Returns one higher of number only when digit after decimal is greater than 0
 console.log(Math.floor(20.4)); //Returns one lower of number only when digit after decimal is greater than 0
@@ -13,3 +15,10 @@ console.log(Math.random())    //Returns random number between 0 to 1
 
 let a = 23.234235243
 console.log(a.toFixed(2))   //Returns only count of number after decimal which is provided as param to toFixed
+
+/* Loop */
+//For loop
+let n = Number(prompt("Enter a number:- "))
+for(let i =1; i<=n;i++){
+    console.log("Hello world!!")
+}

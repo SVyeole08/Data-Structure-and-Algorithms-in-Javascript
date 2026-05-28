@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+/* Math problems */
 //Compound Interest:
 const compound_interest = () => {
   let p = Number(prompt("Enter the Principle:-"));
@@ -55,6 +56,7 @@ const dice = () => {
 };
 // dice();
 
+/* Conditional Problems */
 //Leap Year:
 const leap = () => {
   let isLeap = false;
@@ -221,56 +223,173 @@ const movierate = () => {
 // movierate();
 
 //Salary:
-let qualification = prompt("Enter your qualification (PG/Graduate): ");
-let yos = Number(prompt("Enter your year of service: "));
-let gen = prompt("Enter your Gender(F/M): ");
-let salary = 0;
-if (gen == "M") {
-  if (qualification == "PG") {
-    if (yos >= 10) {
-      salary = 15000;
-      console.log(`Your salary is ${salary}`);
-    } else if (yos < 10 && yos > 0) {
-      salary = 10000;
-      console.log(`Your salary is ${salary}`);
+const salaryCalc = () => {
+  let qualification = prompt("Enter your qualification (PG/Graduate): ");
+  let yos = Number(prompt("Enter your year of service: "));
+  let gen = prompt("Enter your Gender(F/M): ");
+  let salary = 0;
+  if (gen == "M") {
+    if (qualification == "PG") {
+      if (yos >= 10) {
+        salary = 15000;
+        console.log(`Your salary is ${salary}`);
+      } else if (yos < 10 && yos > 0) {
+        salary = 10000;
+        console.log(`Your salary is ${salary}`);
+      } else {
+        console.log("Enter correct Year of Service.");
+      }
+    } else if (qualification == "Graduate") {
+      if (yos >= 10) {
+        salary = 10000;
+        console.log(`Your salary is ${salary}`);
+      } else if (yos < 10 && yos > 0) {
+        salary = 7000;
+        console.log(`Your salary is ${salary}`);
+      } else {
+        console.log("Enter correct Year of Service.");
+      }
     } else {
-      console.log("Enter correct Year of Service.");
+      console.log("Enter valid qualification.");
     }
-  } else if (qualification == "Graduate") {
-    if (yos >= 10) {
-      salary = 10000;
-      console.log(`Your salary is ${salary}`);
-    } else if (yos < 10 && yos > 0) {
-      salary = 7000;
-      console.log(`Your salary is ${salary}`);
+  } else if (gen == "F") {
+    if (qualification == "PG") {
+      if (yos >= 10) {
+        salary = 12000;
+        console.log(`Your salary is ${salary}`);
+      } else if (yos < 10 && yos > 0) {
+        salary = 10000;
+        console.log(`Your salary is ${salary}`);
+      } else {
+        console.log("Enter correct Year of Service.");
+      }
+    } else if (qualification == "Graduate") {
+      if (yos >= 10) {
+        salary = 9000;
+        console.log(`Your salary is ${salary}`);
+      } else if (yos < 10 && yos > 0) {
+        salary = 6000;
+        console.log(`Your salary is ${salary}`);
+      } else {
+        console.log("Enter correct Year of Service.");
+      }
     } else {
-      console.log("Enter correct Year of Service.");
+      console.log("Enter valid qualification.");
     }
-  } else {
-    console.log("Enter valid qualification.");
   }
-} else if (gen == "F") {
-  if (qualification == "PG") {
-    if (yos >= 10) {
-      salary = 12000;
-      console.log(`Your salary is ${salary}`);
-    } else if (yos < 10 && yos > 0) {
-      salary = 10000;
-      console.log(`Your salary is ${salary}`);
-    } else {
-      console.log("Enter correct Year of Service.");
-    }
-  } else if (qualification == "Graduate") {
-    if (yos >= 10) {
-      salary = 9000;
-      console.log(`Your salary is ${salary}`);
-    } else if (yos < 10 && yos > 0) {
-      salary = 6000;
-      console.log(`Your salary is ${salary}`);
-    } else {
-      console.log("Enter correct Year of Service.");
-    }
-  } else {
-    console.log("Enter valid qualification.");
+};
+// salaryCalc();
+
+/* Loop problems */
+const natural_nums = () => {
+  let n = Number(prompt("Enter the number:"));
+  for (let i = 1; i <= n; i++) {
+    console.log(i);
   }
-}
+};
+// natural_nums();
+
+const reverse_nums = () => {
+  let n = Number(prompt("Enter the number:"));
+  for (let i = n; i >= 1; i--) {
+    console.log(i);
+  }
+};
+// reverse_nums();
+
+const table = () => {
+  let n = Number(prompt("Enter the number to print its table: "));
+  let m = Number(prompt("Enter the number till you want its table: "));
+  for (let i = 1; i <= m; i++) {
+    console.log(`${n} * ${i} = ${n * i}`);
+  }
+};
+// table();
+
+const sum_n = () => {
+  let n = Number(prompt("Enter the number:"));
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  console.log(sum);
+};
+// sum_n();
+
+const factorial = () => {
+  let n = Number(prompt("Enter the number:"));
+  let fact = 1;
+  for (let i = 1; i <= n; i++) {
+    fact = fact * i;
+  }
+  console.log(fact);
+};
+// factorial();
+
+const sum_even_odd = () => {
+  let n = Number(prompt("Enter the number:"));
+  let even = 0;
+  let odd = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 == 0) {
+      even += i;
+    } else {
+      odd += i;
+    }
+  }
+  console.log("Sum of even numbers is " + even);
+  console.log("Sum of odd numbers is " + odd);
+};
+// sum_even_odd();
+
+const factors = () => {
+  let n = Number(prompt("Enter the number:"));
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      console.log(i);
+    }
+  }
+};
+// factors();
+
+const check_prime = () => {
+  let n = Number(prompt("Enter the number:"));
+  let fact = 0;
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      fact = i;
+      count++;
+    }
+  }
+  if (count == 2) console.log(n + " is a prime");
+  else if (count == 1) console.log(n + " is neither prime nor composite");
+  else console.log(n + " is a composite");
+};
+// check_prime();
+
+const check_prime_2 = () => {
+  let n = Number(prompt("Enter the number:"));
+  let isPrime = isPrimeFun(n);
+  if (isPrime) console.log(n + " is a prime number");
+  else console.log(n + " is composite number");
+
+  function isPrimeFun(n) {
+    if (n <= 1) return false;
+    if (n == 2) return true;
+    if (n % 2 == 0) return false;
+    for (let i = 3; i <= Math.floor(Math.sqrt(n)); i += 2) {
+      if (n % i == 0) return false;
+    }
+    return true;
+  }
+};
+// check_prime_2();
+
+const exponent = () => {
+  let n = Number(prompt("Enter the number: "));
+  let m = Number(prompt("Enter the power: "));
+  let exp = Math.pow(n, m);
+  console.log(n + "^" + m + "=" + exp);
+};
+// exponent();
