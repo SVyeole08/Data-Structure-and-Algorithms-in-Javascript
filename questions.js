@@ -219,3 +219,58 @@ const movierate = () => {
   }
 };
 // movierate();
+
+//Salary:
+let qualification = prompt("Enter your qualification (PG/Graduate): ");
+let yos = Number(prompt("Enter your year of service: "));
+let gen = prompt("Enter your Gender(F/M): ");
+let salary = 0;
+if (gen == "M") {
+  if (qualification == "PG") {
+    if (yos >= 10) {
+      salary = 15000;
+      console.log(`Your salary is ${salary}`);
+    } else if (yos < 10 && yos > 0) {
+      salary = 10000;
+      console.log(`Your salary is ${salary}`);
+    } else {
+      console.log("Enter correct Year of Service.");
+    }
+  } else if (qualification == "Graduate") {
+    if (yos >= 10) {
+      salary = 10000;
+      console.log(`Your salary is ${salary}`);
+    } else if (yos < 10 && yos > 0) {
+      salary = 7000;
+      console.log(`Your salary is ${salary}`);
+    } else {
+      console.log("Enter correct Year of Service.");
+    }
+  } else {
+    console.log("Enter valid qualification.");
+  }
+} else if (gen == "F") {
+  if (qualification == "PG") {
+    if (yos >= 10) {
+      salary = 12000;
+      console.log(`Your salary is ${salary}`);
+    } else if (yos < 10 && yos > 0) {
+      salary = 10000;
+      console.log(`Your salary is ${salary}`);
+    } else {
+      console.log("Enter correct Year of Service.");
+    }
+  } else if (qualification == "Graduate") {
+    if (yos >= 10) {
+      salary = 9000;
+      console.log(`Your salary is ${salary}`);
+    } else if (yos < 10 && yos > 0) {
+      salary = 6000;
+      console.log(`Your salary is ${salary}`);
+    } else {
+      console.log("Enter correct Year of Service.");
+    }
+  } else {
+    console.log("Enter valid qualification.");
+  }
+}
