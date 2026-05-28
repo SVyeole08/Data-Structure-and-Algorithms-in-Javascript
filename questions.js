@@ -135,4 +135,87 @@ const electricity = () => {
   }
   console.log("Your electricity bill is " + amount + "₹");
 };
-electricity();
+// electricity();
+
+//Problem Statement: Indian Currency Notes Breakdown
+const currency = () => {
+  let amount = Number(prompt("Enter the number:- "));
+  let copy = amount;
+
+  let count_2k = Math.floor(copy / 2000);
+  copy = copy - count_2k * 2000;
+  console.log(copy);
+  let count_5h = Math.floor(copy / 500);
+  copy = copy - count_5h * 500;
+  console.log(copy);
+  let count_2h = Math.floor(copy / 200);
+  copy = copy - count_2h * 200;
+  console.log(copy);
+  let count_h = Math.floor(copy / 100);
+  copy = copy - count_h * 100;
+  console.log(copy);
+  let count_l = Math.floor(copy / 50);
+  copy = copy - count_l * 50;
+  console.log(copy);
+  let count_20 = Math.floor(copy / 20);
+  copy = copy - count_20 * 20;
+  console.log(copy);
+  let count_10 = Math.floor(copy / 10);
+  copy = copy - count_10 * 10;
+  console.log(copy);
+  let count_5 = Math.floor(copy / 5);
+  copy = copy - count_10 * 5;
+  console.log(copy);
+  let count_2 = Math.floor(copy / 2);
+  copy = copy - count_10 * 2;
+  console.log(copy);
+  let count_1 = Math.floor(copy / 1);
+  copy = copy - count_10 * 1;
+  console.log(copy);
+
+  console.log("₹2000 * " + count_2k);
+  console.log("₹500 * " + count_5h);
+  console.log("₹200 * " + count_2h);
+  console.log("₹100 * " + count_h);
+  console.log("₹50 * " + count_l);
+  console.log("₹20 * " + count_20);
+  console.log("₹10 * " + count_10);
+  console.log("₹5 * " + count_5);
+  console.log("₹2 * " + count_2);
+  console.log("₹1 * " + count_1);
+};
+// currency();
+
+const currency2 = () => {
+  let amount = Number(prompt("Enter the number:- "));
+  let copy = amount;
+
+  let notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+  for (let note of notes) {
+    let count = Math.floor(copy / note);
+
+    if (count > 0) {
+      console.log(`₹${note} * ${count}`);
+    }
+    copy = copy % note;
+  }
+};
+// currency2();
+
+//Movie rating:
+const movierate = () => {
+  let rate = Number(prompt("Enter rating of movie between 0.0 - 5.0:- "));
+  let movie = prompt("Enter the name of movie:- ");
+  if (rate >= 0.0 && rate <= 2.0) {
+    console.log(`${movie} is a Flop`);
+  } else if (rate >= 2.1 && rate <= 3.4) {
+    console.log(`${movie} is a Semi-hit`);
+  } else if (rate >= 3.5 && rate <= 4.5) {
+    console.log(`${movie} is a Hit`);
+  } else if (rate >= 4.6 && rate <= 5.0) {
+    console.log(`${movie} is a Super Hit`);
+  } else {
+    console.log("Enter rating between 0.0 - 5.0");
+  }
+};
+// movierate();
