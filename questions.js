@@ -393,3 +393,45 @@ const exponent = () => {
   console.log(n + "^" + m + "=" + exp);
 };
 // exponent();
+
+//While loop problems:
+const sum_digits = () => {
+  let n = Number(prompt("Enter a number:"));
+  let copy = n;
+  let sum = 0;
+  while (copy > 0) {
+    let digit = copy % 10;
+    sum += digit;
+    copy = Math.floor(copy / 10);
+  }
+  console.log("Sum of digits of " + n + " is " + sum);
+};
+// sum_digits();
+
+const rev_num = () => {
+  let n = Number(prompt("Enter a number:"));
+  let copy = n;
+  let rev = 0;
+  while (copy > 0) {
+    let digit = copy % 10;
+    rev = rev * 10 + digit;
+    copy = Math.floor(copy / 10);
+  }
+  console.log(rev);
+};
+// rev_num();
+
+const automorphic = () => {
+  let n = Number(prompt("Enter a number: "));
+  let copy = n;
+  let sq = n * n;
+  let count = 0;
+  while (copy > 0) {
+    count++;
+    copy = Math.floor(copy / 10);
+  }
+  if (sq % Math.pow(10, count) == n)
+    console.log(n + " is an Automorphic number");
+  else console.log(n + " is not an Automorphic number");
+};
+// automorphic();
