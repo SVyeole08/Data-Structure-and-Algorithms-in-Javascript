@@ -40,6 +40,16 @@ while(condition){
 }
 */
 
+//do-while loop
+/*
+in do-while loop the code in do run once without any blockage but to run the code in do again condition of while must be true.
+
+let i = 1;
+do{
+    --
+}while(condition);
+*/ 
+
 //Switch case
 /*
 n is input
@@ -52,5 +62,8 @@ switch (n) {
     {
     }
     break;
+  default:
+    {
+    }
 }
 */

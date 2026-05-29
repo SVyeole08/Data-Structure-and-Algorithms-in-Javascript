@@ -435,3 +435,37 @@ const automorphic = () => {
   else console.log(n + " is not an Automorphic number");
 };
 // automorphic();
+
+//do-while problems:
+const hello = () => {
+  let n = Number(prompt("Enter the number till you want hello to print: "));
+  let i = 1;
+  do {
+    console.log("hello");
+    i++;
+  } while (i <= n);
+};
+// hello();
+
+const guess_num = () => {
+  let com = Math.floor(Math.random() * 100 + 1);
+  let userInput;
+  do {
+    userInput = Number(prompt("Enter no. between 1-100: "));
+    if (isNaN(userInput) || userInput <= 0 || userInput > 100) {
+      console.log("Please enter valid no. between 1-100.");
+      continue;
+    }
+    if (userInput > com) {
+      console.log(userInput + " is high, try to go lower.");
+    } else if (userInput < com) {
+      console.log(userInput + " is low, try to go higher.");
+    } else {
+      console.log(
+        "Congratulations you guessed it correctly, number was " + com,
+      );
+    }
+  } while (com != userInput);
+};
+// guess_num();
+
