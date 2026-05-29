@@ -469,3 +469,82 @@ const guess_num = () => {
 };
 // guess_num();
 
+//Nested Loop problems:
+const star_square = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// star_square();
+
+const star_tri1 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = n + 1 - i; j >= 1; j--) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// star_tri1();
+
+const star_tri2 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 0; i < n; i++) {
+    for (let k = 0; k < i; k++) {
+      process.stdout.write("  ");
+    }
+    for (let j = n - i; j > 0; j--) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// star_tri2();
+
+const star_tri3 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// star_tri3();
+
+const star_tri4 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let k = n - i; k > 0; k--) {
+      process.stdout.write("  ");
+    }
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// star_tri4();
+
+const num_tri3 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write(j + " ");
+    }
+    console.log();
+  }
+};
+// num_tri3();
+let n = Number(prompt("Enter a number: "));
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    process.stdout.write(j + " ");
+  }
+  console.log();
+}
