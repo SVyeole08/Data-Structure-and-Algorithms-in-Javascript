@@ -546,7 +546,6 @@ const num_tri3 = () => {
 const hcf = () => {
   let a = Number(prompt("Enter first number: "));
   let b = Number(prompt("Enter second number: "));
-  let fact = 0;
   for (let i = Math.min(a, b); i > 0; i--) {
     if (a % i === 0 && b % i === 0) {
       console.log("HCF of " + a + " and " + b + " is " + i);
@@ -692,3 +691,72 @@ const neon_check = () => {
   }
 };
 // neon_check();
+
+const sum_fibo_even = () => {
+  let n = Number(prompt("Enter a number: "));
+  let a = 0,
+    b = 1,
+    c = 0,
+    sum = 0;
+  let fibon = [a, b];
+  for (let i = 2; i <= 2 * n; i++) {
+    c = a + b;
+    fibon.push(c);
+    a = b;
+    b = c;
+  }
+  for (let j = 0; j <= 2 * n; j += 2) {
+    sum += fibon[j];
+  }
+  process.stdout.write(sum + " ");
+};
+// sum_fibo_even();
+
+const max = () => {
+  let n = Number(prompt("Enter a number: "));
+  let copy = n;
+  let digits = [];
+  for (let i = 1; i <= copy.toString().length; i++) {
+    let digit = copy % 10;
+    digits.push(digit);
+    copy = Math.floor(copy / 10);
+  }
+  let max = digits[0];
+  for (let i = 1; i < digits.length; i++) {
+    if (max < digits[i]) {
+      max = digits[i];
+    }
+  }
+  console.log(max);
+};
+// max();
+
+const lcm_1 = () => {
+  let a = Number(prompt("Enter first number: "));
+  let b = Number(prompt("Enter second number: "));
+  let tablemax = 0;
+  let maxm = Math.max(a, b);
+  let minm = Math.min(a, b);
+
+  for (let i = 1; i <= 10; i++) {
+    tablemax = maxm * i;
+    if (tablemax % a == 0 && tablemax % b == 0) {
+      console.log(tablemax);
+      break;
+    }
+  }
+};
+// lcm_1();
+
+const lcm_2 = () => {
+  let gcd = 0;
+  for (let i = Math.min(a, b); i > 0; i--) {
+    if (a % i === 0 && b % i === 0) {
+      gcd = i;
+      break;
+    }
+  }
+  let lcm = (a * b) / gcd;
+  console.log(lcm);
+};
+// lcm_2();
