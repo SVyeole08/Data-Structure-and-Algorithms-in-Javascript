@@ -541,10 +541,35 @@ const num_tri3 = () => {
   }
 };
 // num_tri3();
-let n = Number(prompt("Enter a number: "));
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= i; j++) {
-    process.stdout.write(j + " ");
+
+//HCF
+const hcf = () => {
+  let a = Number(prompt("Enter first number: "));
+  let b = Number(prompt("Enter second number: "));
+  let fact = 0;
+  for (let i = Math.min(a, b); i > 0; i--) {
+    if (a % i === 0 && b % i === 0) {
+      console.log("HCF of " + a + " and " + b + " is " + i);
+      break;
+    }
   }
-  console.log();
-}
+};
+// hcf();
+
+const harshad = () => {
+  let n = Number(prompt("Enter a number: "));
+  let sum = 0;
+  let copy = n;
+  for (let i = 1; i <= n; i++) {
+    let digit = copy % 10;
+    sum += digit;
+    copy = Math.floor(copy / 10);
+  }
+  if (n % sum == 0) {
+    console.log(n + " is a Harshad number.");
+  } else {
+    console.log(n + " is not a Harshad number.");
+  }
+};
+// harshad();
+
