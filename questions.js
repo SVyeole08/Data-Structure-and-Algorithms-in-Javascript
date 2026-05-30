@@ -573,3 +573,122 @@ const harshad = () => {
 };
 // harshad();
 
+const perfect_sqr = () => {
+  let n = Number(prompt("Enter a square: "));
+  if (n % Math.pow(n, 0.5) == 0) {
+    console.log(n + " is a perfect square");
+  } else {
+    console.log(n + " is not a perfect square");
+  }
+};
+// perfect_sqr();
+
+const abundant = () => {
+  let n = Number(prompt("Enter a number: "));
+  let fact = 0;
+  let sum = 0;
+  for (let i = 1; i <= n / 2; i++) {
+    if (n % i == 0) {
+      fact = i;
+      sum += fact;
+    }
+  }
+  if (sum > n) {
+    console.log(n + " is an Abundant number.");
+  } else {
+    console.log(n + " is not an Abundant number.");
+  }
+};
+// abundant();
+
+const fibo = () => {
+  let n = Number(prompt("Enter a number: "));
+  let a = 0;
+  let b = 1;
+  let c = 0;
+  process.stdout.write(`${a}, `);
+  process.stdout.write(`${b}, `);
+  for (let i = 2; i < n; i++) {
+    c = a + b;
+    process.stdout.write(`${c}, `);
+    a = b;
+    b = c;
+  }
+};
+// fibo();
+
+const prime_factors = () => {
+  let n = Number(prompt("Enter a number: "));
+  let fact = 0;
+  let primefact = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      fact = i;
+      let prime = isprime(fact);
+      if (prime) primefact.push(fact);
+    }
+  }
+  console.log("Prime factors of " + n + " is " + primefact);
+
+  function isprime(fact) {
+    if (fact <= 1) return false;
+    if (fact == 2) return true;
+    for (let i = 3; i <= fact / 2; i += 2) {
+      if (fact % i == 0) return false;
+    }
+    return true;
+  }
+};
+// prime_factors();
+
+const area_shapes = () => {
+  let choice = prompt(
+    "Enter of which you want to find area (Circle,Rectangle,Triangle):",
+  ).toLowerCase();
+  let area = 0;
+  switch (choice) {
+    case "circle":
+      let r = Number(prompt("Enter value of  radius: "));
+      area = Math.PI * r * r;
+      console.log("Area of Circle is " + area);
+      break;
+
+    case "rectangle":
+      let l = Number(prompt("Enter value of length: "));
+      let b = Number(prompt("Enter value of breadth: "));
+      area = l * b;
+      console.log("Area of Rectangle is " + area);
+      break;
+
+    case "triangle":
+      let base = Number(prompt("Enter value of base of triangle: "));
+      let height = Number(prompt("Enter value of height of triangle: "));
+      area = 0.5 * base * height;
+      console.log("Area of Triangle is " + area);
+      break;
+
+    default:
+      console.log("Enter a valid choice.");
+      break;
+  }
+};
+// area_shapes();
+
+const neon_check = () => {
+  let n = Number(prompt("Enter the number: "));
+  let sq = n * n;
+  let copysq = sq;
+  let digit = 0;
+  let sum = 0;
+  for (let i = 1; i <= copysq; i++) {
+    digit = copysq % 10;
+    sum += digit;
+    copysq = Math.floor(copysq / 10);
+  }
+  if (sum == n) {
+    console.log(n + " is a neon number.");
+  } else {
+    console.log(n + " is not a neon number.");
+  }
+};
+// neon_check();
