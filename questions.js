@@ -517,7 +517,7 @@ const star_tri3 = () => {
 };
 // star_tri3();
 
-const star_tri4 = () => {
+const mirror_tri = () => {
   let n = Number(prompt("Enter a number: "));
   for (let i = 1; i <= n; i++) {
     for (let k = n - i; k > 0; k--) {
@@ -529,7 +529,21 @@ const star_tri4 = () => {
     console.log();
   }
 };
-// star_tri4();
+// mirror_tri();
+
+const tri = () => {
+  let n = Number(prompt("Enter the number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = n - i; j > 0; j--) {
+      process.stdout.write(" ");
+    }
+    for (let k = 1; k <= i; k++) {
+      process.stdout.write("* ");
+    }
+    console.log();
+  }
+};
+// tri();
 
 const num_tri3 = () => {
   let n = Number(prompt("Enter a number: "));
@@ -541,6 +555,49 @@ const num_tri3 = () => {
   }
 };
 // num_tri3();
+
+const alpha_tri3 = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    let temp = 97; //65 for capital chars
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write(String.fromCharCode(temp) + " ");
+      temp++;
+    }
+    console.log();
+  }
+};
+// alpha_tri3();
+
+const cross = () => {
+  let n = Number(prompt("Enter a number:"));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (i + j == n + 1 || i == j) {
+        process.stdout.write("* ");
+      } else {
+        process.stdout.write("  ");
+      }
+    }
+    console.log();
+  }
+};
+// cross();
+
+const v_shape = () => {
+  let n = Number(prompt("Enter a number:"));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= 2 * n; j++) {
+      if (i + j == 2 * n || i == j) {
+        process.stdout.write("* ");
+      } else {
+        process.stdout.write("  ");
+      }
+    }
+    console.log();
+  }
+};
+// v_shape();
 
 //HCF
 const hcf = () => {
