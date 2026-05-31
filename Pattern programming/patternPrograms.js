@@ -1,5 +1,4 @@
 let prompt = require("prompt-sync")();
-
 const star_square = () => {
   let n = Number(prompt("Enter a number: "));
   for (let i = 1; i <= n; i++) {
@@ -128,3 +127,23 @@ const v_shape = () => {
   }
 };
 // v_shape();
+
+const simple_star = () => {
+  let n = Number(prompt("Enter a number: "));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (
+        i + j == n + 1 ||
+        i == Math.floor((n + 1) / 2) ||
+        j == Math.floor((n + 1) / 2) ||
+        i == j
+      ) {
+        process.stdout.write("* ");
+      } else {
+        process.stdout.write("  ");
+      }
+    }
+    console.log();
+  }
+};
+// simple_star();
