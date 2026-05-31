@@ -104,19 +104,6 @@ node filename.js
 
 ---
 
-# 🌟 Why This Repository?
-
-This repository is not just about solutions.
-
-It is focused on:
-
-* Understanding concepts deeply
-* Writing clean and readable code
-* Tracking progress consistently
-* Learning DSA using JavaScript from beginner to advanced
-
----
-
 # 🤝 Contributions
 
 Contributions, suggestions, and improvements are welcome.
