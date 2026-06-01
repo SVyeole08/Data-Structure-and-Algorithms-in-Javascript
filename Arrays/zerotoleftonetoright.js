@@ -19,7 +19,6 @@ const left0right2 = () => {
   let arr = [2, 1, 0, 0, 2, 2, 1, 0, 1, 1, 2, 1, 0];
   let i = 0;
   let j = 0;
-  let k = 0;
 
   while (i < arr.length) {
     if (arr[i] == 0) {
