@@ -95,7 +95,7 @@ node filename.js
 # 📈 Learning Progress
 
 * [x] Basics of JavaScript
-* [ ] Arrays
+* [x] Arrays
 * [ ] Strings
 * [ ] Linked List
 * [ ] Trees
