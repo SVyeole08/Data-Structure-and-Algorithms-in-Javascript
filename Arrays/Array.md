@@ -207,4 +207,3 @@ console.log("Maximum element in array:", max);
 3. Print the maximum value.
 
 ---
-Displaying Day35.md.
