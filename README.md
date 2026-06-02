@@ -60,6 +60,10 @@ The goal of this repository is to:
 ```bash
 📦 Data-Structure-and-Algorithms-in-Javascript
  ┣ 📂 Arrays
+ ┣ 📂 Loops
+ ┣ 📂 Math Functions
+ ┣ 📂 Pattern programming
+ ┣ 📂 Problems
  ┣ 📂 Strings
  ┣ 📂 LinkedList
  ┣ 📂 Stack

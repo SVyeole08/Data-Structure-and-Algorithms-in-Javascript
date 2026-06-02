@@ -421,21 +421,6 @@ const rev_num = () => {
 };
 // rev_num();
 
-const automorphic = () => {
-  let n = Number(prompt("Enter a number: "));
-  let copy = n;
-  let sq = n * n;
-  let count = 0;
-  while (copy > 0) {
-    count++;
-    copy = Math.floor(copy / 10);
-  }
-  if (sq % Math.pow(10, count) == n)
-    console.log(n + " is an Automorphic number");
-  else console.log(n + " is not an Automorphic number");
-};
-// automorphic();
-
 //do-while problems:
 const hello = () => {
   let n = Number(prompt("Enter the number till you want hello to print: "));
