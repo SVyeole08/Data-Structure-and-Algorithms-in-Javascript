@@ -88,7 +88,7 @@ const num_tri3 = () => {
 const alpha_tri3 = () => {
   let n = Number(prompt("Enter a number: "));
   for (let i = 1; i <= n; i++) {
-    let temp = 97; //65 for capital chars
+    let temp = 65; //65 for capital chars
     for (let j = 1; j <= i; j++) {
       process.stdout.write(String.fromCharCode(temp) + " ");
       temp++;
