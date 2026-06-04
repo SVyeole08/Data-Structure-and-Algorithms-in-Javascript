@@ -11,5 +11,5 @@ for (let i = 0; i < arr.length; i++) {
 if (index == -1) {
   console.log("Element not found.");
 } else {
-  console.log("Target found at " + index + "th index");
+  console.log("Target found at " + index + " index");
 }
