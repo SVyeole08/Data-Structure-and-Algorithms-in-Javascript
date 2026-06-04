@@ -19,4 +19,4 @@ const reverse = () => {
   }
   console.log(rev);
 };
-reverse()
+reverse();
