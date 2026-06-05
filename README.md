@@ -101,7 +101,7 @@ node filename.js
 
 * [x] Basics of JavaScript
 * [x] Arrays
-* [ ] Strings
+* [x] Strings
 * [ ] Linked List
 * [ ] Trees
 * [ ] Graphs

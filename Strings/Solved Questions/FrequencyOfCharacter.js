@@ -1,8 +1,8 @@
 let prompt = require("prompt-sync")();
+//Made using Bitmap
 let str = prompt("Enter sentence: ");
-
 let arr = new Array(123).fill(0);
-for (let i = 0; i < str.length; i++) {
+for (let i = 0; i < str.length; i++) { 
   let ascii = str.charCodeAt(i);
   arr[ascii]++;
 }
