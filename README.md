@@ -65,6 +65,7 @@ The goal of this repository is to:
  ┣ 📂 Math Functions
  ┣ 📂 Pattern programming
  ┣ 📂 Problems
+ ┣ 📂 Sets
  ┣ 📂 Strings
  ┣ 📂 LinkedList
  ┣ 📂 Stack
@@ -102,6 +103,7 @@ node filename.js
 * [x] Basics of JavaScript
 * [x] Arrays
 * [x] Strings
+* [x] Sets
 * [ ] Linked List
 * [ ] Trees
 * [ ] Graphs
