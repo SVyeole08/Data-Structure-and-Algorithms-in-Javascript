@@ -9,5 +9,4 @@ for (let i = 0; i < num.length; i++) {
     ans[1] = i;
     console.log(ans);
   } else map.set(num[i], i);
-  return (tg = false);
 }
