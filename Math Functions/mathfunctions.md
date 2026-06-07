@@ -19,7 +19,7 @@
 
 ## 🧠 Math Problems with JavaScript
 
-### ✅ Q1. Calculate Compound Interest
+### ✅ Q. Calculate Compound Interest
 
 ```js
 function compoundInterest(p, r, t) {
@@ -37,7 +37,7 @@ console.log(compoundInterest(1000, 10, 2)); // 1210.00
 
 ---
 
-### ✅ Q2. Area of Triangle (Heron’s Formula)
+### ✅ Q. Area of Triangle (Heron’s Formula)
 
 ```js
 function heronArea(a, b, c) {
@@ -55,7 +55,7 @@ console.log(heronArea(5, 6, 7)); // 14.70
 
 ---
 
-### ✅ Q3. Generate OTP (4-digit)
+### ✅ Q. Generate OTP (4-digit)
 
 ```js
 function generateOTP() {
@@ -70,7 +70,7 @@ console.log(generateOTP()); // e.g., 4783
 
 ---
 
-### ✅ Q4. Circumference of Circle
+### ✅ Q. Circumference of Circle
 
 ```js
 function circumference(radius) {
@@ -90,7 +90,7 @@ console.log(circumference(7)); // 43.98
 
 ---
 
-### ✅ Q5. Print Greatest of Two Numbers
+### ✅ Q. Print Greatest of Two Numbers
 
 ```js
 function greater(a, b) {
@@ -107,7 +107,7 @@ greater(5, 10);
 
 ---
 
-### ✅ Q6. Even or Odd
+### ✅ Q. Even or Odd
 
 ```js
 function evenOdd(n) {
@@ -123,7 +123,7 @@ evenOdd(7);
 
 ---
 
-### ✅ Q7. Voter Eligibility
+### ✅ Q. Voter Eligibility
 
 ```js
 function isVoter(name, age) {
@@ -139,7 +139,7 @@ isVoter("John", 20);
 
 ---
 
-### ✅ Q8. Greatest Among Three Numbers
+### ✅ Q. Greatest Among Three Numbers
 
 ```js
 function greatest(a, b, c) {

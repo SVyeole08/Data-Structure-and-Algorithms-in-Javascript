@@ -62,6 +62,7 @@ The goal of this repository is to:
  ┣ 📂 Arrays
  ┣ 📂 Complexity
  ┣ 📂 Loops
+ ┣ 📂 Maps
  ┣ 📂 Math Functions
  ┣ 📂 Pattern programming
  ┣ 📂 Problems
@@ -104,6 +105,7 @@ node filename.js
 * [x] Arrays
 * [x] Strings
 * [x] Sets
+* [x] Maps
 * [ ] Linked List
 * [ ] Trees
 * [ ] Graphs
