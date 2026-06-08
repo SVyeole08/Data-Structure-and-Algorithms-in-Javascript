@@ -53,7 +53,8 @@ var numJewelsInStones = function(jewels, stones) {
     }
 
 return count
-};```
+};
+```
 
 Q. Happy Number
 

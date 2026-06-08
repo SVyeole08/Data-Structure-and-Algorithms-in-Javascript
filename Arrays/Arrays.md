@@ -1,4 +1,3 @@
-
 ### ✅ Q. Strong Number
 
 *A number is strong if sum of factorials of its digits equals the number.*
