@@ -1,4 +1,4 @@
-# < Data Structures and Algorithms in JavaScript />
+# 📊Data Structures and Algorithms in JavaScript
 
 A collection of **Data Structures and Algorithms implemented in JavaScript** while learning DSA step-by-step.
 

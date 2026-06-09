@@ -1,5 +1,4 @@
 const left0 = () => {
-  let prompt = require("prompt-sync")();
   let arr = [1, 1, 0, 1, 0, 0, 1];
   let i = 0;
   let j = 0;
@@ -14,6 +13,7 @@ const left0 = () => {
   }
   console.log(arr);
 };
+// left0();
 
 const left0right2 = () => {
   let arr = [2, 1, 0, 0, 2, 2, 1, 0, 1, 1, 2, 1, 0];
@@ -41,3 +41,4 @@ const left0right2 = () => {
   }
   console.log(arr);
 };
+// left0right2()
