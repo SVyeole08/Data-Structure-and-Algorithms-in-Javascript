@@ -12,4 +12,4 @@ function temp(x, n) {
   if (n % 2 == 0) return ans * ans;
   return ans * ans * x;
 }
-//parsetInt converts value to integer
+//parseInt converts value to integer
