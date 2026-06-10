@@ -12,11 +12,11 @@ for (let i = 0; i < size; i++) {
   }
   console.log();
 }
-let trans = Array.from({ length: arr[0].length }, () => Array(arr.length));
-for (let i = 0; i < trans.length; i++) {
-  for (let j = 0; j < trans[i].length; j++) {
-    trans[i][j] = arr[j][i];
+let transpose = Array.from({ length: arr[0].length }, () => Array(arr.length));
+for (let i = 0; i < transpose.length; i++) {
+  for (let j = 0; j < transpose[i].length; j++) {
+    transpose[i][j] = arr[j][i];
   }
 }
 
-console.log(trans);
+console.log(transpose);
