@@ -102,7 +102,7 @@ function sum(arr) {
 
 ---
 
-#### ✅ Q1. Sum of Array Elements
+Q1. Sum of Array Elements
 
 ```js
 function sum(arr) {
@@ -119,7 +119,7 @@ function sum(arr) {
 
 ---
 
-#### ✅ Q2. Find Max Element
+Q2. Find Max Element
 
 ```js
 function maxElement(arr) {
@@ -136,7 +136,7 @@ function maxElement(arr) {
 
 ---
 
-#### ✅ Q3. Brute Force Pair Sum
+Q3. Brute Force Pair Sum
 
 ```js
 function hasPairSum(arr, k) {
@@ -154,7 +154,7 @@ function hasPairSum(arr, k) {
 
 ---
 
-#### ✅ Q4. Optimized Pair Sum using Set
+Q4. Optimized Pair Sum using Set
 
 ```js
 function hasPairSum(arr, k) {
