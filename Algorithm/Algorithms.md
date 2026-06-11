@@ -74,3 +74,43 @@ function conquer(arr , f , m , l){
 | 3Sum (Brute)     | O(n³)           | O(n)             | Uses Set                      |
 | 3Sum (Optimized) | O(n²)           | O(1)             | Uses sort + 2-pointer         |
 | Merge Sort       | O(n log n)      | O(n)             | Recursive, divide-and-conquer |
+
+## Quick Sort
+
+### Definition
+
+Quick Sort is a Divide and Conquer algorithm that sorts an array by selecting a pivot element, partitioning the remaining elements around it, and recursively sorting the resulting subarrays.
+
+#### Key Idea
+
+1. Choose a pivot.
+2. Place all smaller elements to the left of the pivot.
+3. Place all larger elements to the right of the pivot.
+4. Recursively sort both halves.
+
+#### Time Complexity
+
+| Case    | Complexity |
+| ------- | ---------- |
+| Best    | O(n log n) |
+| Average | O(n log n) |
+| Worst   | O(n²)      |
+
+#### Space Complexity
+
+| Complexity                 |
+| -------------------------- |
+| O(log n) (recursive stack) |
+
+#### Use Cases
+
+* Large datasets
+* General-purpose sorting
+* In-place sorting when memory is limited
+* System-level sorting implementations
+
+#### Important Note
+
+Quick Sort is **not stable** because equal elements may change their relative order.
+
+---
