@@ -1,4 +1,4 @@
-# 📊Data Structures and Algorithms in JavaScript
+# 📊 Data Structures and Algorithms in JavaScript
 
 A collection of **Data Structures and Algorithms implemented in JavaScript** while learning DSA step-by-step.
 
@@ -64,16 +64,16 @@ The goal of this repository is to:
  ┣ 📂 Loops
  ┣ 📂 Maps
  ┣ 📂 Math Functions
+ ┣ 📂 Memory & Recursion
  ┣ 📂 Pattern programming
  ┣ 📂 Problems
- ┣ 📂 Sets
- ┣ 📂 Strings
  ┣ 📂 LinkedList
  ┣ 📂 Stack
  ┣ 📂 Queue
- ┣ 📂 Recursion
- ┣ 📂 Sorting
  ┣ 📂 Searching
+ ┣ 📂 Sets
+ ┣ 📂 Sorting
+ ┣ 📂 Strings
  ┗ README.md
 ``` -->
 
