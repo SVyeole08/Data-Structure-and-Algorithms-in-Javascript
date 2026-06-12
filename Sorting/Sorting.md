@@ -1,6 +1,8 @@
+# Sorting Algorithms
+
 ## Merge Sort
 
-### Given:
+### Given
 
 ```js
 let arr = [10,7,8,2,19,69,45,8]
@@ -58,7 +60,7 @@ function conquer(arr , f , m , l){
 }
 ```
 
-#### 🔍 Summary:
+#### 🔍 Summary
 
 * Merges two sorted halves \[f...m] and \[m+1...l].
 * Uses extra `temp[]` to hold merged values.
@@ -112,5 +114,71 @@ Quick Sort is a Divide and Conquer algorithm that sorts an array by selecting a 
 #### Important Note
 
 Quick Sort is **not stable** because equal elements may change their relative order.
+
+---
+
+## Cyclic Sort
+
+### Overview
+
+Cyclic Sort is an index-based sorting algorithm designed for arrays containing numbers from **1 to n** without duplicates.
+
+### Key Idea (Cyclic)
+
+Each element is placed directly at its correct index:
+
+```text
+value x → index x - 1
+```
+
+### Time Complexity (Cyclic)
+
+| Complexity |
+| ---------- |
+| O(n)       |
+
+### Space Complexity (Cyclic)
+
+| Complexity |
+| ---------- |
+| O(1)       |
+
+### Use Cases (Cyclic)
+
+* Finding missing numbers
+* Finding duplicate numbers
+* Finding corrupted pairs
+* Arrays containing numbers from 1 to n
+
+### Important Note (Cyclic)
+
+Cyclic Sort is **not stable** because elements are swapped directly into position.
+
+---
+
+## Interview Questions
+
+**Q. What is the time complexity of Cyclic Sort?**
+
+**Answer:**
+
+* Time: O(n)
+* Space: O(1)
+
+**Q. Is Cyclic Sort stable?**
+
+**Answer:**
+No, Cyclic Sort is not stable.
+
+**Q. Why is Cyclic Sort efficient for arrays containing numbers from 1 to n?**
+
+**Answer:**
+Because each number can be placed directly at its correct index using the relation:
+
+```js
+correctIndex = arr[i] - 1
+```
+
+This minimizes unnecessary comparisons and avoids recursion.
 
 ---
