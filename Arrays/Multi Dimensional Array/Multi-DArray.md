@@ -115,16 +115,14 @@ return sum;
 - For a matrix of dimension m x n, the result will be n x m.
 
 ### ✅ Java Code:
-```java
-int m = matrix.length, n = matrix[0].length;
-int ans[][] = new int[n][m];
-
-for(int i = 0; i < n; i++){
-    for(int j = 0; j < m; j++){
-        ans[i][j] = matrix[j][i];
-    }
+```js
+let transpose = Array.from({ length: arr[0].length }, () => Array(arr.length));
+for (let i = 0; i < transpose.length; i++) {
+  for (let j = 0; j < transpose[i].length; j++) {
+    transpose[i][j] = arr[j][i];
+  }
 }
-return ans;
+return arr
 ```
 
 ---

@@ -1,9 +1,8 @@
-
-## 📘 **Algorithm Complexity Notes**
+# 📘 **Algorithm Complexity Notes**
 
 ---
 
-### 🔹 1. **What is Complexity?**
+## 🔹 1. **What is Complexity?**
 
 * **Complexity** is used to describe the **efficiency** of an algorithm.
 * Two main types:
@@ -13,11 +12,11 @@
 
 ---
 
-### 🔹 2. **Time Complexity**
+## 🔹 2. **Time Complexity**
 
 Time complexity defines the **number of operations** in terms of the **input size `n`**.
 
-### 🔹 3. **Handling for Large Inputs**
+## 🔹 3. **Handling for Large Inputs**
 
 * Avoid `O(n²)`, `O(2ⁿ)`, `O(n!)` for large `n > 10^4`
 * Use:
@@ -28,7 +27,7 @@ Time complexity defines the **number of operations** in terms of the **input siz
 
 ---
 
-### 🔹 4. **Complexity Representation**
+## 🔹 4. **Complexity Representation**
 
 * **Big O (O)**: Worst-case (Most used)
 * **Omega (Ω)**: Best-case
@@ -49,8 +48,7 @@ function linearSearch(arr, x) {
 * **Worst-case (O)**: O(n) – Found at last or not found
 * **Average-case (Θ)**: O(n/2) → O(n)
 
-
-### 🔹 6. **Generating Complexity Equations**
+## 🔹 6. **Generating Complexity Equations**
 
 🔍 **Example**:
 
@@ -66,7 +64,7 @@ for(let i = 0; i < n; i++)        // O(n)
 
 ---
 
-### 🔹 7. **TLE (Time Limit Exceeded)**
+## 🔹 7. **TLE (Time Limit Exceeded)**
 
 * Happens when your code exceeds the allowed time limit (often \~1s or \~2s).
 * **Avoid TLE by**:
@@ -77,12 +75,12 @@ for(let i = 0; i < n; i++)        // O(n)
 
 ---
 
-### 🔹 8. **Space Complexity**
+## 🔹 8. **Space Complexity**
 
 * Measures **extra memory** used by the algorithm (not input).
 * Includes: function call stack, variables, arrays, etc.
 
-#### 📌 Example:
+### 📌 Example
 
 ```js
 function sum(arr) {
@@ -98,7 +96,7 @@ function sum(arr) {
 
 ---
 
-### 🔹 9. **Practice Questions with Time and Space Analysis**
+## 🔹 9. **Practice Questions with Time and Space Analysis**
 
 ---
 
@@ -169,5 +167,3 @@ function hasPairSum(arr, k) {
 
 * **Time**: O(n)
 * **Space**: O(n)
-
----
