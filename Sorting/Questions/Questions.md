@@ -37,7 +37,7 @@ var missingNumber = function(nums) {
 
 ---
 
-## Find All Numbers Disappeared in an Array
+## 👻 Find All Numbers Disappeared in an Array
 
 ```javascript
 var findDisappearedNumbers = function(nums) {
@@ -75,7 +75,7 @@ var findDisappearedNumbers = function(nums) {
 
 ---
 
-## First Missing Positive
+## ⭐ First Missing Positive
 
 ```javascript
 var firstMissingPositive = function(nums) {

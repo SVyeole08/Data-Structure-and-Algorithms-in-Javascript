@@ -1,6 +1,6 @@
 # Searching Questions
 
-## Search Insert Position
+## 📍 Search Insert Position
 
 ### 🧠 Problem
 
@@ -46,7 +46,7 @@ var searchInsert = function(nums, target) {
 
 ---
 
-## First and Last Position of Element in Sorted Array
+## 🔢 First and Last Position of Element in Sorted Array
 
 ### 🧠 Problem with Finding Range
 
@@ -100,7 +100,7 @@ function findIndex(nums, target, findFirst) {
 
 ---
 
-## Count of an Element in a Sorted Array
+## 📊 Count of an Element in a Sorted Array
 
 ### 🧠 Problem with Counting
 
@@ -155,3 +155,166 @@ function findIndex(nums, target, findFirst) {
 ```
 
 ---
+
+## 🏔️ Peak Index in Mountain Array
+
+**Definition:**
+A mountain array first increases and then decreases. The peak index is the index of the maximum element.
+
+**Approach:**
+
+* Use Binary Search.
+* If `arr[mid] < arr[mid + 1]`, move right.
+* Otherwise, move left.
+* Stop when `start == end`.
+
+**Time Complexity:** `O(log n)`
+
+---
+
+## 🔄 Search in Rotated Sorted Array
+
+**Definition:**
+Find a target element in a rotated sorted array in `O(log n)` time.
+
+**Key Idea:**
+At least one half of the array is always sorted.
+
+**Approach:**
+
+* Find `mid`.
+* Check which half is sorted.
+* Determine whether the target lies in that half.
+* Eliminate the other half.
+
+**Time Complexity:** `O(log n)`
+
+---
+
+## 📚 Book Allocation Problem
+
+**Definition:**
+Allocate books among students such that:
+
+* Every student gets at least one book.
+* Allocation is contiguous.
+* Maximum pages assigned to a student is minimized.
+
+### Binary Search on Answer - Problem 3
+
+#### Search Space (Problem 3)
+
+```text
+start = max(books)
+end = sum(books)
+```
+
+#### Validation (Problem 3)
+
+For a given `mid`:
+
+```text
+mid = maximum pages allowed per student
+```
+
+Count students required.
+
+* If students ≤ k → Valid
+* Else → Invalid
+
+**Time Complexity:** `O(n log(sum))`
+
+---
+
+## 📦 Capacity to Ship Packages Within D Days
+
+**Definition:**
+Find the minimum ship capacity needed to deliver all packages within `D` days.
+
+### Binary Search on Answer - Problem 4
+
+#### Search Space (Problem 4)
+
+```text
+start = max(weights)
+end = sum(weights)
+```
+
+#### Validation (Problem 4)
+
+```text
+mid = ship capacity
+```
+
+Simulate shipping:
+
+* If capacity exceeded → new day.
+* Count total days required.
+
+If:
+
+```text
+days <= D
+```
+
+Capacity is valid.
+
+---
+
+## 🍌 Koko Eating Bananas
+
+**Definition:**
+Koko eats `k` bananas per hour.
+
+Find the minimum eating speed required to finish all piles within `h` hours.
+
+### Binary Search on Answer - Problem 5
+
+#### Search Space (Problem 5)
+
+```text
+start = 1
+end = max(piles)
+```
+
+#### Validation (Problem 5)
+
+For a speed:
+
+```js
+hours += Math.ceil(pile / speed)
+```
+
+If:
+
+```text
+hours <= h
+```
+
+Speed is valid.
+
+---
+
+## 🎯 Binary Search on Answer Pattern
+
+Many optimization problems follow:
+
+```text
+NO NO NO NO YES YES YES
+```
+
+Steps:
+
+1. Identify the answer range.
+2. Binary search on the answer.
+3. Write an `isValid(mid)` function.
+4. If valid → search left.
+5. Else → search right.
+
+---
+
+## 💡 Main Learning
+
+Binary Search is not only for searching elements.
+
+It can also be used to find the minimum or maximum valid answer by defining a search space and a validation function.
