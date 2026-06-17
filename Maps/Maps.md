@@ -1,4 +1,4 @@
-## Map in JavaScript
+# Map in JavaScript
 
 Map is a built-in object that holds key-value pairs.
 Unlike regular objects, a Map can have keys of any type (not just strings or symbols).
@@ -7,7 +7,7 @@ Map remembers the original insertion order of the keys.
 
 It has better performance for frequently adding/removing key-value pairs compared to plain objects.
 
-Map can not have duplicate keys but can have duplicate values. 
+Map can not have duplicate keys but can have duplicate values.
 
 ```js
 let map = new Map();
@@ -71,7 +71,8 @@ for(let [key, value] of map.entries()){
 }
 ```
 
-Q. Two Sum:
+## **Q. Two Sum:**
+
 Given an array of integers nums and a target, return the indices of the two numbers such that they add up to target.
 
 Approach 1: Brute Force (O(n²))
@@ -106,7 +107,8 @@ function twoSum(nums, target) {
 }
 ```
 
-Q. First Letter Appears Twice
+## **Q. First Letter Appears Twice**
+
 Given a string, find the first character that appears twice.
 
 Approach 1: Set Lookup (O(n))
@@ -148,8 +150,7 @@ A Map stores the frequency of each character.
 When any character’s count reaches 2, that’s your answer.
 If none reaches 2, return null.
 
-
-Q. Sort the People
+## **Q. Sort the People**
 
 Given names and corresponding heights, sort the people in descending order by height.
 
