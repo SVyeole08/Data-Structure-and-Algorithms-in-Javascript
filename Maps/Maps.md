@@ -1,4 +1,5 @@
-## Map in JavaScript:
+## Map in JavaScript
+
 Map is a built-in object that holds key-value pairs.
 Unlike regular objects, a Map can have keys of any type (not just strings or symbols).
 
@@ -17,7 +18,9 @@ map.delete(key);
 map.size;
 map.clear();
 ```
+
 Example:
+
 ```js
 let myMap = new Map();
 
@@ -72,6 +75,7 @@ Q. Two Sum:
 Given an array of integers nums and a target, return the indices of the two numbers such that they add up to target.
 
 Approach 1: Brute Force (O(n²))
+
 ```js
 function twoSum(nums, target) {
     for(let i = 0; i < nums.length; i++) {
@@ -101,10 +105,12 @@ function twoSum(nums, target) {
     return [];
 }
 ```
+
 Q. First Letter Appears Twice
 Given a string, find the first character that appears twice.
 
 Approach 1: Set Lookup (O(n))
+
 ```js
 function repeatedCharacter(s) {
     let seen = new Set();
@@ -114,9 +120,11 @@ function repeatedCharacter(s) {
         seen.add(char);
     }
     return null;
-}```
+}
+```
 
 Approach 2: Map for Frequency Counting
+
 ```js
 function repeatedCharacter(s) {
     let freq = new Map();
@@ -131,15 +139,20 @@ function repeatedCharacter(s) {
     }
 
     return null;
-}```
+}
+```
+
 Explanation:
+
 A Map stores the frequency of each character.
 When any character’s count reaches 2, that’s your answer.
 If none reaches 2, return null.
 
 
 Q. Sort the People
+
 Given names and corresponding heights, sort the people in descending order by height.
+
 ```js
 let names = ["Alice", "Bob", "Charlie"];
 let heights = [165, 180, 175];
@@ -162,4 +175,5 @@ var sortPeople = function(names, heights) {
          ans[i] = map.get(heights[i])
     }
     return ans;
-};```
+};
+```

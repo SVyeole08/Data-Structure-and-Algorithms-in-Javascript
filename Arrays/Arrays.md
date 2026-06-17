@@ -57,9 +57,9 @@ console.log(nums.length);  // 3
 ```js
 let arr = [1, 2, 3];
 arr.push(4);       // [1,2,3,4]
-arr.pop();         // [1,2,3]
+arr.pop();         // [1,2]
 arr.unshift(0);    // [0,1,2,3]
-arr.shift();       // [1,2,3]
+arr.shift();       // [2,3]
 ```
 
 ---
@@ -99,7 +99,7 @@ const prompt = require('prompt-sync')();
 
 ---
 
-## 🔹 **1. Accept values from user and assign in the array**
+## 🔹 **Accept values from user and assign in the array**
 
 ### ✅ Code:
 
@@ -128,7 +128,7 @@ console.log("Entered Array:", arr);
 
 ---
 
-🔹 ** Q: Sum of array's elements**
+## 🔹 **Sum of array's elements**
 
 ### ✅ Code:
 
@@ -150,7 +150,7 @@ console.log("Sum of array elements:", sum);
 
 ---
 
-🔹 **Q: Find max element in the array**
+## 🔹 **Find max element in the array**
 
 ### ✅ Code:
 
@@ -175,7 +175,7 @@ console.log("Maximum element in array:", max);
 ---
 
 
- ** Q. Maximum Subarray**
+## 🔹 **Maximum Subarray**
 
 **Goal:** Find the contiguous subarray (at least one number) with the **largest sum**.
 **Classic Solution:** **Kadane's Algorithm**
@@ -240,13 +240,14 @@ function maxSubArrayBrute(nums) {
 
 ---
 
-**Q. Majority Element**
+## **Majority Element**
 
 **Goal:** Find the element that appears **more than ⌊n / 2⌋ times**.
 
 ---
 
 ### 🔹 Method 1: **Boyer-Moore Voting Algorithm (O(n), O(1))**
+
 ### 🔍 Your Code:
 
 ```javascript
@@ -351,7 +352,7 @@ The loop ensures that the solution is found in O(n) time.
 
 ---
 
-**Q. Best Time to Buy and Sell Stock**
+## **Best Time to Buy and Sell Stock**
 
 **Goal:** Find the **maximum profit** by buying and selling one stock.
 
@@ -381,7 +382,7 @@ function maxProfit(prices) {
 * Update `maxProfit` if this profit is higher.
 
 
-Q. Sort Colors (Dutch National Flag Algorithm)
+## **Sort Colors (Dutch National Flag Algorithm)**
 
 ```js
 var swap = function(nums , i , j){
@@ -430,7 +431,7 @@ var sortColors = function(nums) {
 
 ---
 
-Q. Trapping Rain Water
+## **Trapping Rain Water**
 
 ```js
 var trap = function(height) {
@@ -483,7 +484,7 @@ var trap = function(height) {
 
 ---
 
-Q. Container With Most Water
+## **Container With Most Water**
 
 ### 📌 Brute Force (O(n²)) – Method 1:
 
@@ -623,7 +624,7 @@ function threeSum(nums) {
 }
 ```
 
-#### 🔍 Explanation:
+#### 🔍 Explanation
 
 * Sort the array → O(n log n)
 * For each number, use 2-pointer to find the pair that sums to `-nums[i]`.
