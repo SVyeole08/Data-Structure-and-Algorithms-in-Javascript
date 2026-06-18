@@ -1,11 +1,13 @@
-## Set
+# Set
 
-### Definition:
+## Definition
+
 A Set is a built-in collection of uniq values (no duplicates allowed).
 Set only accepts distinct values.
 Set is unordered.
 
 Example:
+
 ```js
 let set = new Set();
 

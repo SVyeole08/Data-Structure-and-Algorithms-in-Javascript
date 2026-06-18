@@ -47,6 +47,7 @@ p1.greet(); // Hello, I'm Rahul
 ## 3. Class and Object
 
 **Definition:**
+
 - **Class:** Blueprint for creating objects.
 - **Object:** An instance of a class.
 
